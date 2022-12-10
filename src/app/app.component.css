@@ -1,0 +1,14 @@
+.header{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-table {
+  background-color: rgb(38, 42, 43);
+  cursor: pointer;
+  color: #e8e6e3;
+}

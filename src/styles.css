@@ -1,0 +1,6 @@
+@import 'ngx-toastr/toastr';
+
+html {
+  background-color: #130F1C;
+  color: #e8e6e3;
+}

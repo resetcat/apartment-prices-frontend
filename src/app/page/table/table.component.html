@@ -1,0 +1,32 @@
+<div class="list-group">
+
+  <li>
+    <table class="table">
+      <tr>
+        <th>kārtas numurs</th>
+        <th>Gads un pusgads</th>
+        <th>Vidējā cena (EUR/m2) Rīga (centrs)</th>
+        <th>Darījumu skaits Rīga (centrs)</th>
+        <th>Vidējā cena (EUR/m2) Rīga (mikrorajoni)</th>
+        <th>Darījumu skaits Rīga (mikrorajoni)</th>
+        <th>Vidējā cena (EUR/m2) Jūrmala (Sloka, Kauguri)</th>
+        <th>Darījumu skaits Jūrmala (Sloka, Kauguri)</th>
+        <th>Saglabāt</th>
+      </tr>
+      <tr  *ngFor="let post of posts">
+        <td>{{post._id}}</td>
+        <td>{{post["Gads un pusgads"]}}</td>
+        <td>{{post["Vidējā cena (EUR/m2) Rīga (centrs)"]}}</td>
+        <td>{{post["Darījumu skaits Rīga (centrs)"]}}</td>
+        <td>{{post["Vidējā cena (EUR/m2) Rīga (mikrorajoni)"]}}</td>
+        <td>{{post["Darījumu skaits Rīga (mikrorajoni)"]}}</td>
+        <td>{{post["Vidējā cena (EUR/m2) Jūrmala (Sloka, Kauguri)"]}}</td>
+        <td>{{post["Darījumu skaits Jūrmala (Sloka, Kauguri)"]}}</td>
+        <td><button (click)="saveRow(post)" class="btn-save">save</button></td>
+
+      </tr>
+
+    </table>
+
+  </li>
+</div>

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {TableComponent} from "./page/table/table.component";
 import {RouterModule, Routes} from "@angular/router";
+import {SavedTableComponent} from "./page/saved-table/saved-table.component";
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'table',
     component: TableComponent,
+  },
+  {
+    path: 'savedTable',
+    component: SavedTableComponent,
   },
   {
     path: '**',

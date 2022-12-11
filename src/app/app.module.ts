@@ -10,11 +10,13 @@ import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CommonModule} from "@angular/common";
 import {ToastrModule} from "ngx-toastr";
+import { SavedTableComponent } from './page/saved-table/saved-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
+    SavedTableComponent,
 
   ],
   imports: [

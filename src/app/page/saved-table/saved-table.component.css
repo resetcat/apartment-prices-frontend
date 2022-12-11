@@ -1,0 +1,22 @@
+@import 'ngx-toastr/toastr';
+.table{
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border:1px solid black;
+}
+td, th{
+  border: 1px solid #595454;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(38, 42, 43);
+}
+
+.btn-save{
+  background-color: rgb(38, 42, 43);
+  cursor: pointer;
+  color: #e8e6e3;
+}

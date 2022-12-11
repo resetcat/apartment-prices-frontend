@@ -3,15 +3,15 @@
   <li>
     <table class="table">
       <tr>
-        <th>kārtas numurs</th>
-        <th>Gads un pusgads</th>
-        <th>Vidējā cena (EUR/m2) Rīga (centrs)</th>
-        <th>Darījumu skaits Rīga (centrs)</th>
-        <th>Vidējā cena (EUR/m2) Rīga (mikrorajoni)</th>
-        <th>Darījumu skaits Rīga (mikrorajoni)</th>
-        <th>Vidējā cena (EUR/m2) Jūrmala (Sloka, Kauguri)</th>
-        <th>Darījumu skaits Jūrmala (Sloka, Kauguri)</th>
-        <th>Saglabāt</th>
+        <th>id</th>
+        <th>period</th>
+        <th>Average price (EUR/m2) Riga (center)</th>
+        <th>Transaction count Riga (center)</th>
+        <th>Average price (EUR/m2) Riga (suburbs)</th>
+        <th>Transaction count Rīga (mikrorajoni)</th>
+        <th>Average price (EUR/m2) Jurmala (Sloka, Kauguri)</th>
+        <th>Transaction count Jurmala (Sloka, Kauguri)</th>
+        <th>Save</th>
       </tr>
       <tr  *ngFor="let post of posts">
         <td>{{post._id}}</td>

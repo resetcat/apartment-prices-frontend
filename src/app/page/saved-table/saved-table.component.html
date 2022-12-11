@@ -1,0 +1,32 @@
+<div class="list-group">
+
+  <li>
+    <table class="table">
+      <tr>
+        <th>id</th>
+        <th>period</th>
+        <th>Average price (EUR/m2) Riga (center)</th>
+        <th>Transaction count Riga (center)</th>
+        <th>Average price (EUR/m2) Riga (suburbs)</th>
+        <th>Transaction count Rīga (mikrorajoni)</th>
+        <th>Average price (EUR/m2) Jurmala (Sloka, Kauguri)</th>
+        <th>Transaction count Jurmala (Sloka, Kauguri)</th>
+        <th>Delete</th>
+      </tr>
+      <tr  *ngFor="let row of table">
+        <td>{{row.id}}</td>
+        <td>{{row.period}}</td>
+        <td>{{row.averagePriceRigaCenter}}</td>
+        <td>{{row.transactionCountRiga}}</td>
+        <td>{{row.averagePriceRigaSub}}</td>
+        <td>{{row.transactionCountRigaSub}}</td>
+        <td>{{row.averagePriceJurmala}}</td>
+        <td>{{row.transactionCountJurmala}}</td>
+        <td><button (click)="deleteRow(row.id)" class="btn-save">delete</button></td>
+
+      </tr>
+
+    </table>
+
+  </li>
+</div>

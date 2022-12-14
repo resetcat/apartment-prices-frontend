@@ -1,17 +1,17 @@
 import {Component, OnInit} from '@angular/core';
-import {RecordData} from "../../models/data.model";
-import {PostService} from "../../services/post.service";
-import {SendData} from "../../models/sendData.model";
+import {ApartmentPrice} from "../../models/apartment-price-api-data.model";
+import {ApartmentPriceServices} from "../../services/apartment-price-services.service";
+import {ApartmentData} from "../../models/apartment-price-beckend-data.model";
 import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrls: ['./table.component.css']
+  templateUrl: './response-apartment-prices.component.html',
+  styleUrls: ['./response-apartment-prices.component.css']
 })
-export class TableComponent implements  OnInit{
-  posts?: RecordData[] ;
+export class ResponseApartmentPricesComponent implements  OnInit{
+  posts?: ApartmentPrice[] ;
 
-  constructor(private service:PostService, private toastr: ToastrService) {
+  constructor(private service:ApartmentPriceServices, private toastr: ToastrService) {
   }
 
   ngOnInit() {
@@ -21,8 +21,8 @@ export class TableComponent implements  OnInit{
 
 
 
-  saveRow(data:RecordData){
-  const sendingRow = new SendData(
+  saveRow(data:ApartmentPrice){
+  const sendingRow = new ApartmentData(
     data._id,
     data["Gads un pusgads"],
     data["Vidējā cena (EUR/m2) Rīga (centrs)"],

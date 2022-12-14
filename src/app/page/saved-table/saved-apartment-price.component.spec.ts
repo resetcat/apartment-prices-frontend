@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SavedTableComponent } from './saved-table.component';
+import { SavedApartmentPriceComponent } from './saved-apartment-price.component';
 
 describe('SavedTableComponent', () => {
-  let component: SavedTableComponent;
-  let fixture: ComponentFixture<SavedTableComponent>;
+  let component: SavedApartmentPriceComponent;
+  let fixture: ComponentFixture<SavedApartmentPriceComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SavedTableComponent ]
+      declarations: [ SavedApartmentPriceComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SavedTableComponent);
+    fixture = TestBed.createComponent(SavedApartmentPriceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

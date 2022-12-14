@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {TableComponent} from "./page/table/table.component";
+import {ResponseApartmentPricesComponent} from "./page/table/response-apartment-prices.component";
 import {RouterModule, Routes} from "@angular/router";
-import {SavedTableComponent} from "./page/saved-table/saved-table.component";
+import {SavedApartmentPriceComponent} from "./page/saved-table/saved-apartment-price.component";
 
 const routes: Routes = [
   {
@@ -12,11 +12,11 @@ const routes: Routes = [
   },
   {
     path: 'table',
-    component: TableComponent,
+    component: ResponseApartmentPricesComponent,
   },
   {
     path: 'savedTable',
-    component: SavedTableComponent,
+    component: SavedApartmentPriceComponent,
   },
   {
     path: '**',

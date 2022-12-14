@@ -1,4 +1,4 @@
-export class SendData {
+export class ApartmentData {
   id: number;
   period: string;
   averagePriceRigaCenter: number;

@@ -1,16 +1,16 @@
-export interface PostAPIResponse {
+export interface ApartmentPriceAPIResponse {
   help: string;
   success: boolean;
-  result: PostResult;
+  result: ApartmentPriceAPIResult;
 }
 
 
-export interface PostResult {
+export interface ApartmentPriceAPIResult {
   include_total: boolean;
   resource_id : string;
   fields: FieldFormat[];
   records_format: string;
-  records:RecordData[];
+  records:ApartmentPrice[];
   _links:{
     start:string;
     next:string;
@@ -18,7 +18,7 @@ export interface PostResult {
   total:number;
 }
 
-export interface RecordData{
+export interface ApartmentPrice {
   _id: number;
   "Gads un pusgads":string;
   "Vid\u0113j\u0101 cena (EUR/m2) R\u012bga (centrs)":number;
